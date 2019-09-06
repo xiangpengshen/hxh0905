@@ -18,7 +18,7 @@ Page({
   password: function (e) {
     this.data.password = e.detail.value;
   },
-  yzmInput: function (e) {
+  yzm: function (e) {
     this.data.yzm = e.detail.value;
   },
 
