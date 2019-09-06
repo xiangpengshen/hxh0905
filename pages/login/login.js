@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 var MCAP = require('../../utils/mcaptcha.js');
+var MD5 = require('../../utils/md5.js');
 const app = getApp()
 
 Page({
@@ -21,7 +22,6 @@ Page({
   yzm: function (e) {
     this.data.yzm = e.detail.value;
   },
-
   submit: function (e) {
     console.log('系统生成的验证码：' + this.data.sysyzm.toLowerCase());
     console.log('您输入的验证码：' + this.data.yzm.toLowerCase());
@@ -29,7 +29,7 @@ Page({
       url: 'https://localhost/wxlogin',//上线的话必须是https，没有appId的本地请求貌似不受影响
       data: {
         mobile: this.data.userName,
-        password: this.data.password
+        password: MD5.md5(this.data.password)
       },
       method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: {}, // 设置请求的 header

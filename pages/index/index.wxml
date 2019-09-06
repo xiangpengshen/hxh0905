@@ -12,7 +12,6 @@
     <text class="user-motto">{{motto}}</text>
   </view>
   <view>{{ msg }}</view>
-  <button bindtap="clickMe">点击我</button>
-  
+  <button bindtap="clickMe">login</button>
 
 </view>
