@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "选择器",
-  "usingComponents": {
-    "navbar": "/component/navbar/navbar"
-  }
-}

@@ -4,26 +4,18 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
+		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"coverView": true,
 		"autoAudits": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		}
+		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.8.2",
 	"appid": "wx543575ef3833c4a9",
-	"projectname": "%E5%8C%96%E7%BA%A4%E6%B1%87%E6%B5%8B%E8%AF%95",
+	"projectname": "hxh-wx-new",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
