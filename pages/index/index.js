@@ -8,8 +8,7 @@ Page({
     msg: '',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
   bindViewTap: function() {
@@ -18,9 +17,7 @@ Page({
     })
   },
   clickMe: function() {
-    wx.navigateTo({
-      url: '../login/login',
-    })
+    this.setData({ msg: "Hello HXH" })
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
